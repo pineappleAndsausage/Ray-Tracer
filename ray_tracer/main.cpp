@@ -1,13 +1,29 @@
 #include <iostream>
 #include "Vector3F.h"
+#include "Colors.h"
 
 using namespace std;
 void vectorTest();
+void colorTest();
 int main(void)
 {
-	vectorTest();
+	colorTest();
 	getchar();
 	return 0;
+}
+void colorTest()
+{
+	Colors color(.1f, .2f, .3f);
+	
+	cout << color << endl;
+	cout << "+ : " << color + color << endl;
+	cout << "- : " << color - color << endl;
+	cout << "* : " << color * color << endl;
+	cout << "*2 : " << color * 2 << endl;
+	cout << "2* : " << 2 * color << endl;
+	cout << "/2 : " << color / 2 << endl;
+
+
 }
 void vectorTest()
 {

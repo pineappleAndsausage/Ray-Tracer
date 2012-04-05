@@ -60,6 +60,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Colors.h" />
     <ClInclude Include="Vector3F.h" />
   </ItemGroup>
   <ItemGroup>
