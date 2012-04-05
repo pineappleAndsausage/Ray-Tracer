@@ -1,41 +1,27 @@
+#pragma once
 #include <iostream>
 #include "Vector3F.h"
 #include "Colors.h"
+#include "unittest.h"
+
 
 using namespace std;
 void vectorTest();
-void colorTest();
-int main(void)
+
+
+
+int main(int argc, char **argv)
 {
-	colorTest();
+	unittest(argc,argv);
 	getchar();
 	return 0;
 }
-void colorTest()
-{
-	Colors color(.1f, .2f, .3f);
-	
-	cout << color << endl;
-	cout << "+ : " << color + color << endl;
-	cout << "- : " << color - color << endl;
-	cout << "* : " << color * color << endl;
-	cout << "*2 : " << color * 2 << endl;
-	cout << "2* : " << 2 * color << endl;
-	cout << "/2 : " << color / 2 << endl;
 
-
-}
 void vectorTest()
 {
 	Vector3F vec(1,2,3);	
 	Vector3F vec2(1,0,0);	
-	cout << vec << endl;	
-	cout << "-u : " << -vec << endl;
-	cout << "+1 : " << vec+1 << endl;
-	cout << "-1 : " << vec-1 << endl;
-	cout << "*2 : " << vec*2 << endl;
-	cout << "2* : " << 2*vec << endl;
-	cout << "/2 : " << vec/2 << endl;
+	cout << vec << endl;		
 	cout << "[] : " << vec[0] << vec[1] << vec[2] << endl;
 	cout << "dot : " << vec * vec << endl;
 	cout << "cross : " << vec % vec2 << endl;
